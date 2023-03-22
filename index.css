@@ -1,0 +1,279 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+image{
+    width: 100%;
+} 
+
+body{
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header{
+    margin: 0 auto;
+    color: #fff;
+    padding: 1.25em 8em 15em 8em;
+    background: linear-gradient(45deg, #9a73e8, #4ed795, #0baee9, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main{
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+li{
+    color: #fff;
+    list-style: none;
+    font-size: 1.125rem;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+a { text-decoration: none; }
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color: #0528f0; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+.navbar{
+    display: flex; 
+    gap: 25px;
+    justify-content: space-between;
+}
+
+p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.mobile-intro-tag{
+    visibility: hidden;
+}
+
+.mobile-intro-img-container{
+    visibility: hidden;
+}
+
+.desktop-intro-tag{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.75rem;
+    letter-spacing: 5px;
+ 
+}
+
+.header-tag p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-img{
+    filter: grayscale(100%); 
+    border: 2px solid white;
+    max-width: 400px;
+    border-radius: 100%;
+   
+}
+
+.intro-tag{
+    font-size: 1.5rem;
+    line-height: 5em ;
+    text-align: left;
+}
+
+.font-awesome-icon-container{
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#about-me{
+    text-align: center;
+    line-height: 4em;
+    padding: 1.25em 8em 4em 8em;
+}
+
+#about-me h1{
+    font-size: 4rem;
+}
+
+#projects{
+    padding: 1.25em 8em 15em 8em;
+    background-image: -webkit-linear-gradient(-65deg, #FFFFFF  50%, #9a73e8 40%, #4ed795 30%, #0baee9 20%, #23d5ab 80%); 
+	background-size: 100% 100%;
+	animation: gradient 5s ease infinite;
+
+}
+
+#projects h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+#ai-tunes-div{
+    /* padding: 5em 0; */
+}
+
+.ai-tunes-img{
+    max-width: 800px;
+    border-radius: 10px;
+    
+}
+
+.project-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 4em 0;
+    line-height: 3.5em;
+}
+
+#workout-tracker-div{
+    color: #fff;
+}
+
+#workout-tracker-div h2{
+    color: #fff;
+}
+
+.workout-tracker-img{
+    max-width: 850px;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+.passport-img{
+    border-radius: 10px;
+}
+
+#tinbird-div{
+    color: #fff;
+}
+
+.under-construction-img{
+    max-width: 800px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+#skills{
+    padding: 1.25em 8em 15em 8em;
+}
+
+.skill-favicons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#skills h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+#contact h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.contact-container{
+    padding: 2em 0 2em 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+footer{
+    text-align: center;
+    background-color: #66edcd;
+    padding: 1em;
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        padding: 0;
+    }
+    nav{
+        display: flex;
+    }
+    #intro{
+        display: block;
+    }
+    .intro-img-container{
+        /* visibility: hidden; */
+    }
+    .mobile-intro-img-container{
+        visibility: visible;
+    }
+    .desktop-intro-tag{
+        visibility: hidden;
+    }
+    .mobile-intro-tag{
+        visibility: visible;
+    }
+    .intro-img{
+        width: 50%;
+    }
+    .intro-img-container{
+        width: 50%;
+    }
+    .ai-tunes-img{
+        width: 80%;
+    }
+    
+    .passport-img{
+        width: 80%;
+    }
+    .workout-tracker-img{
+        width: 80%;
+    }
+    .under-construction-img{
+        width: 80%;
+    }
+    #projects{
+        background-image: none;
+    }
+    #skills{
+        display: block;
+    }
+    .project-div{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    };
+   
+}
