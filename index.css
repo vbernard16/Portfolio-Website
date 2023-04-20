@@ -322,9 +322,7 @@ footer{
     #intro{
         display: block;
     }
-    .intro-img-container{
-        /* visibility: hidden; */
-    }
+ 
     .mobile-intro-img-container{
         visibility: visible;
     }
