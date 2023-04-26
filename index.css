@@ -72,7 +72,7 @@ a:hover, a:active { text-decoration: none; }
 p{
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .header-link {
@@ -145,7 +145,13 @@ p{
     transform: scale(1.5);
   }
 
+#mobile-intro{
+    visibility: none;
+}
 
+.mobile-nav{
+    visibility: hidden;
+}
 .mobile-intro-tag{
     visibility: hidden;
 }
@@ -158,7 +164,6 @@ p{
     font-family: 'Roboto', sans-serif;
     font-size: 2.75rem;
     letter-spacing: 5px;
- 
 }
 
 .header-tag p{
@@ -172,11 +177,15 @@ p{
 }
 
 .intro-img{
+    width: 100%;
     filter: grayscale(100%); 
     border: 2px solid white;
     max-width: 400px;
     border-radius: 100%;
-   
+}
+
+.intro-img-container{
+    width: 50%;
 }
 
 .intro-tag{
@@ -196,6 +205,7 @@ p{
     text-align: center;
     line-height: 4em;
     padding: 1.25em 8em 4em 8em;
+    margin: 0% 15%;
 }
 
 #about-me h1{
@@ -203,11 +213,10 @@ p{
 }
 
 #projects{
-    padding: 1.25em 8em 15em 8em;
+    padding: 5em 8em 15em 8em;
     background-image: -webkit-linear-gradient(-65deg, #FFFFFF  50%, #9a73e8 40%, #4ed795 30%, #0baee9 20%, #23d5ab 80%); 
 	background-size: 100% 100%;
 	animation: gradient 5s ease infinite;
-
 }
 
 #projects h1{
@@ -215,35 +224,33 @@ p{
     text-align: center;
 }
 
-
 .ai-tunes-img{
-    max-width: 800px;
+    width: 80%;
 }
 
 .project-div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
     padding: 4em 0;
     line-height: 3.5em;
 }
 
 #workout-tracker-div{
-    color: #fff;
+    color: #040404;
 }
 
 
 .workout-tracker-img{
-    max-width: 850px;
+    width: 80%;
 }
-
 
 .passport-img{
     width:100%;
 }
 
-#birb-slots-div p, #birb-slots-div {
+#birb-slots-div p, #birb-slots-div, #birb-slots-div h2 {
     color: #fff;
 }
 
@@ -254,9 +261,11 @@ p{
     color: #fff;
 }
 
+.tinbird-img-div{
+    width: 100%;
+}
 .under-construction-img{
-    max-width: 800px;
-    width: 700px;
+    width: 95%;
     border-radius: 10px;
 }
 
@@ -282,12 +291,13 @@ p{
 }
 
 #skills{
-    padding: 1.25em 8em 15em 8em;
+    margin: 0 auto;
 }
 
 .skill-favicons{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    text-align: center;
 }
 
 #skills h1{
@@ -312,56 +322,64 @@ footer{
     padding: 1em;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1100px){
     body{
         padding: 0;
-    }
-    nav{
-        display: flex;
-    }
-    #intro{
-        display: block;
-    }
- 
-    .mobile-intro-img-container{
-        visibility: visible;
+        font-size: 0.5rem;
     }
     .desktop-intro-tag{
-        visibility: hidden;
+        display: none;
+    }
+    
+    .project-div{
+        font-size: 1.5vw;
+        text-align: center;
+        display: block;
+    }
+    #about-me{
+        margin: auto;
+    }
+    nav{
+        display: none;
+    }
+    .navbar{
+        display: block;
+    }
+    #intro{
+        display: none;
+    }
+    .intro-img{
+        width: 80%;
+    }
+   
+    #mobile-intro{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        visibility: visible;
+    }
+    .mobile-nav{
+        visibility: visible;
     }
     .mobile-intro-tag{
         visibility: visible;
-    }
-    .intro-img{
-        width: 50%;
-    }
-    .intro-img-container{
-        width: 50%;
-    }
-    .ai-tunes-img{
-        width: 80%;
-    }
-    
-    .passport-img{
-        width: 80%;
-    }
-    .workout-tracker-img{
-        width: 80%;
-    }
-    .under-construction-img{
-        width: 80%;
-    }
-    #projects{
-        background-image: none;
-    }
-    #skills{
-        display: block;
-    }
-    .project-div{
-        display: block;
         text-align: center;
-        margin: 0 auto;
-        padding: 0;
-    };
-   
+    }
+    .font-awesome-icon-container{
+        gap: 20px;
+        padding: 0.5em;
+    }
+}
+
+@media screen and (max-width: 705px){
+    #about-me h1, #projects h1, #skills h1, #contact h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 6vw;
+    }
+
+   p{
+    font-size: 4vw;
+   }
 }
