@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
     <script src="https://kit.fontawesome.com/99c14b3cb8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +19,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Andika:wght@700&family=Indie+Flower&family=Koulen&family=Montserrat:wght@300&family=Open+Sans:wght@500&family=Righteous&family=Roboto&family=Slackey&family=Ubuntu:wght@500&family=VT323&family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,8 +33,54 @@
         <div class="circle small shade5"></div>
     </div>
     <header>
+        
+        <!-- <nav class="navbar">
+            <div class="container-fluid">
+                <div class="header-tag">
+                    <h1>Vaughn Bernard</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <div class="navbar ripple-background">
+                        <div class="navbar-nav">
+                            <a class="nav-link header-link" href="#about-me"><span>About me</span></a>
+                            <a href="Resume - Vaughn Bernard (SE).pdf"><li class="header-link"><span>Resume</span></li></a>
+                            <a href="#projects"><li class="header-link"><span>Projects</span></li></a>
+                            <a href="#skills"><li class="header-link"><span>Skills</span></li></a>
+                            <a href="#contact"><li class="header-link"><span>Contact</span></li></a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+           
+        </nav> -->
 
-        <nav>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <div class="header-tag">
+                    <h1>Vaughn Bernard</h1>
+                    <h5 id="intro-sub-tag">Software Developer</h5>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                </div>
+             
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="#about-me"><li class="header-link"><span>About me</span></li></a>
+                    <a href="Resume - Vaughn Bernard (SE).pdf"><li class="header-link"><span>Resume</span></li></a>
+                    <a href="#projects"><li class="header-link"><span>Projects</span></li></a>
+                    <a href="#skills"><li class="header-link"><span>Skills</span></li></a>
+                    <a href="#contact"><li class="header-link"><span>Contact</span></li></a>
+                </div>
+
+            </div>
+          </nav>
+
+        <!-- <nav>
             <div class="header-tag">
                 <h1>Vaughn Bernard</h1>
             </div>
@@ -43,7 +93,7 @@
                     <a href="#contact"><li class="header-link"><span>Contact</span></li></a>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
 
 
         <div id="intro">
@@ -60,11 +110,15 @@
             </div>
         </div>
 
+        
         <div id="mobile-intro">
             <div class="mobile-intro-tag">
-                <div>
+                <!-- <div>
                     <h1>Vaughn Bernard</h1>
                     <h3 class="mobile-liner">Full Stack Software Engineer</h3>
+                    <img class="intro-img" src="IMG_8318.jpg" alt="profile-image">
+                </div> -->
+                <div>
                     <img class="intro-img" src="IMG_8318.jpg" alt="profile-image">
                 </div>
                 <div class="font-awesome-icon-container">
@@ -73,7 +127,7 @@
                     <a href="mailto:vaughnbernard16@gmail.com"><i class="grow fa-solid fa-envelope fa-3x"></i></a>
                 </div>
             </div>
-            <div class="mobile-nav">
+            <!-- <div class="mobile-nav">
                 <ul class="navbar ripple-background">
                     <a href="#about-me"><li class="header-link"><span>About me</span></li></a>
                     <a href="Resume - Vaughn Bernard (SE).pdf"><li class="header-link"><span>Resume</span></li></a>
@@ -81,13 +135,12 @@
                     <a href="#skills"><li class="header-link"><span>Skills</span></li></a>
                     <a href="#contact"><li class="header-link"><span>Contact</span></li></a>
                 </ul>
-            </div>
+            </div> -->
         </div>
 
 
     </header>
     <main>
-        
         <div id="about-me">
             <h1>Who am I</h1>
             <p>Simply put, I'm a guy who loves to learn. I'm a guy who loves to create. And I'm a guy who loves to code. Bringing all these loves together, I design, develop, and deploy web apps and learn how to improve my skills.I hope you enjoy my site, and can see the passion I put into my projects - a passion that runs almost as deep as my passion for bird watching. Thanks for visiting!</p>
@@ -124,7 +177,7 @@
             <div id="birb-slots-div" class="project-div">
                 <div>
                     <a href="https://vbernard16.github.io/Slot-Machine-/"><h2 class="grow-2">Birb Slots</h2></a>
-                    <p>Who needs Vegas when Vegas can come straight to your home? Who needs nature when nature can come to you? Welcome to "Birb Slots", a simple Javascript powered, in-browser video game that simulates the experience of high dollar Las Vegas Casino slot reels AND brings some of the world's coolest feathered friends to your computer.</p>
+                    <p>Who needs Vegas when Vegas can come straight to your home? Welcome to "Birb Slots", a simple Javascript powered, in-browser video game that simulates the experience of high dollar Las Vegas Casino slot reels AND brings some of the world's coolest feathered friends to your computer.</p>
                 </div>
                 <div>
                     <img class="birb-slots-img" src="birb-slots-laptop-mockup.png" alt="birb slots screenshot">
@@ -163,6 +216,7 @@
         </div>
         <div id="contact">
             <h1>Contact</h1>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Λ</button>
             <div class="contact-container">
                 <div>
                     <h3>Github</h3>
